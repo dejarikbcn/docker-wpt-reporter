@@ -1,0 +1,87 @@
+{
+  "_from": "wpt-reporter",
+  "_id": "wpt-reporter@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-ORLk7c1lqwME4I8/GBW9jABV59U=",
+  "_location": "/wpt-reporter",
+  "_phantomChildren": {
+    "commander": "2.10.0",
+    "csv-parse": "1.3.3",
+    "entities": "1.1.2",
+    "growl": "1.9.2",
+    "inherits": "2.0.3",
+    "jade": "0.26.3",
+    "lru-cache": "2.7.3",
+    "mkdirp": "0.5.1",
+    "sigmund": "1.0.1",
+    "to-iso-string": "0.0.2",
+    "xml2js": "0.4.19"
+  },
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "wpt-reporter",
+    "name": "wpt-reporter",
+    "escapedName": "wpt-reporter",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/wpt-reporter/-/wpt-reporter-0.0.1.tgz",
+  "_shasum": "3912e4edcd65ab0304e08f3f1815bd8c0055e7d5",
+  "_spec": "wpt-reporter",
+  "_where": "/home/pi/node_scripts",
+  "bin": {
+    "wpt-reporter": "./bin/index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/wikimedia/wpt-reporter/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "async": "1.4.2",
+    "minimist": "1.1.3",
+    "request": "2.61.0",
+    "webpagetest": "0.3.3"
+  },
+  "deprecated": false,
+  "description": "A thin wrapper for the WebPageTest API that report specific metrics as csv/json or send them to Graphite/Statsv",
+  "devDependencies": {
+    "mocha": "^2.2.5",
+    "mocha-jscs": "^2.0.0",
+    "mocha-jshint": "^2.2.3",
+    "mockery": "1.4.0"
+  },
+  "engines": {
+    "node": ">=0.10.7"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "homepage": "https://wikitech.wikimedia.org/wiki/WebPageTest",
+  "keywords": [
+    "webpagetest",
+    "performance",
+    "reporter",
+    "graphite",
+    "csv",
+    "perfmatters",
+    "webperf"
+  ],
+  "license": "Apache-2.0",
+  "main": "./bin/index.js",
+  "name": "wpt-reporter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wikimedia/wpt-reporter.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "version": "0.0.1"
+}

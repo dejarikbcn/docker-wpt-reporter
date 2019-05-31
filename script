@@ -1,0 +1,14 @@
+#!/usr/bin/python
+import logging
+import subprocess
+
+logging.basicConfig(format='%(asctime)s - %(message)s', filename='/usr/src/wpt-reporter.log', level=logging.INFO)
+logging.info("Test!!!!")
+INSTRUCTION = "/usr/local/bin/node /usr/src/wpt-reporter --webPageTestKey A.0a503c12fae59a9c3075d70fa2e42600 --reporter graphite --graphiteHost 192.168.0.145 --graphitePort 2003 http://dejarikbcn.no-ip.info:8090/dejarik"
+logging.info(INSTRUCTION)
+try:
+    RESULT = subprocess.check_output(INSTRUCTION,shell=True,stderr=subprocess.STDOUT)
+    logging.info(RESULT)
+except subprocess.CalledProcessError as e:
+    logging.error("command '{}' return with error (code {}): {}".format(e.cmd, e.returncode, e.output))
+logging.info("Test Done!!!")
